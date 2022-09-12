@@ -41,6 +41,7 @@ class Item:
         else:
             return False
 
+
     def calculate_total_price(self):
         return self.price * self.quantity
 
@@ -53,5 +54,5 @@ class Item:
 
 
 Item.instantiate_from_csv()
-print(Item.is_integer(7.0))
+Item.is_integer(7.0)
 print(Item.all)
