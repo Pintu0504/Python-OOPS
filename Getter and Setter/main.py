@@ -1,9 +1,10 @@
 from item import Item
 
-item1 = Item("MyItem", 500)
+item1 = Item("MyItem", 500, 2)
 
 # Set the name of Item => Setter
-item1.name = "OtherItem"
+# item1.price = 400
 
 # Get the name of Item => Getter
-print(item1.name)
+item1.apply_discount()
+print(item1.calculate_total_price())
